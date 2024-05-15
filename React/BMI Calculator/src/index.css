@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins&family=Roboto:ital,wght@1,500&display=swap');
+*{
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#f8a5c2;
+}
+.bmi-container{
+  width:800px;
+  height:500px;
+  background-color:#fff;
+  border-radius: 10px;
+  padding:15px;
+  border: 1px solid gainsboro;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+}
+.box{
+  width:350px;
+  background-image: url(assets/bmi.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.data{
+  flex: 1;
+  padding:15px;
+}
+h1{
+  font-weight: 500;
+  margin-bottom: 2px;
+  padding:10px;
+  text-transform: capitalize;
+  font-size: 20px;
+color:#303952
+}
+.input-container{
+  margin-bottom: 15px;
+}
+label{
+  display: flex;
+  color:#1B1464;
+  margin-bottom: 5px;
+}
+input{
+  width:100%;
+  padding:10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+button{
+  background-color: #0652DD;
+  color:white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button:hover{
+  background-color: #2980b9;
+}
+.data button:nth-of-type(2){
+  background-color: crimson;
+  margin-left: 10px;
+  transition:background-color 0.3s;
+}
+.data button:nth-of-type(2):hover{
+  cursor: pointer;
+  background-color: rgb(244, 86, 118);
+}
+.result{
+  margin-top: 10px;
+  padding:10px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+}
+.result p{
+  margin:10px 0;
+  color:#555;
+}
+ .result p:first-child{
+  color:#3498db;
+  font-weight: bold;
+ } 
+ .error{
+  color:red;
+  font-size: 14px;
+  margin-bottom: 10px;
+ }
